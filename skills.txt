@@ -3,9 +3,9 @@ O que eu vou aprender na Trybe:
 - Unix
 - Bash
 - Git
-
+Php 
+GoLang
 O que eu vou aprender na Trybe:
-
 - Unix
 - Bash
 - Git
@@ -13,4 +13,5 @@ O que eu vou aprender na Trybe:
 - CSS
 react 
 Python
+
 
