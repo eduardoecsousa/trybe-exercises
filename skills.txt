@@ -5,3 +5,13 @@ O que eu vou aprender na Trybe:
 - Git
 Php 
 GoLang
+O que eu vou aprender na Trybe:
+- Unix
+- Bash
+- Git
+- HTML
+- CSS
+react 
+Python
+
+
