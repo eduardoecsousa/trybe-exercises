@@ -1,0 +1,67 @@
+
+body{
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+#minhafoto{
+    width: 150px;
+    float: left;
+    padding: 10px;
+    background-color: purple;
+}
+
+
+
+#container{
+    height: 247px;
+    position: relative;
+}
+
+.meuNome{
+    text-align: center;
+    font-weight:600;
+    font-size: 30px;
+}
+
+#descrition{
+    position: relative;
+    margin-left: 160px;
+    margin-right: 150px;
+    top: 49px;
+    text-align: center;
+}
+
+ul li:nth-child(odd) {
+    background-color: aqua;
+
+}
+
+p, li, a{
+font-size: 20px;
+text-decoration: none;
+color: black;
+}
+
+h3{
+    font-size: 26px;
+}
+
+a{
+    border: solid 3px blue;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    transition: 0.5s;
+}
+
+ul{
+    margin-bottom: 30px;
+}
+
+a:hover{
+    font-weight: 600;
+    background-color: aqua;
+}
+
+
