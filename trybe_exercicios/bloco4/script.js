@@ -61,3 +61,65 @@
 
 
 //---Exercice 5
+
+// let weekDay = "quarta-feira";
+
+// if (weekDay === "segunda-feira" || weekDay === "terça-feira" ||weekDay === "quarta-feira" ||weekDay === "quita-feira" ||weekDay === "sexta-feira") {
+//     console.log("Oba, mais um dia de aprendizado na Trybe >:D")
+// }else {
+//     console.log("FINALMENTE, descanso merecido UwU")
+// }
+
+//Exercise 6
+
+
+// let faixaEtaria = 'criança';
+
+// switch (faixaEtaria) {
+//   case 'adolescente':
+    
+
+//     console.log('Consulte a classificação do filme');
+    
+
+//     break;
+    
+    
+//   case 'adulto':
+    
+
+//     console.log('A pessoa adulta é classificada para assistir qualquer filme')
+  
+
+//     break;
+   
+//     case 'idoso':
+      
+//       console.log('A pessoa idosa é classificada para assistir qualquer filme');
+//       break
+//   default:
+   
+//     console.log('só pode assistir filmes livres');
+// }
+
+//---Exercise 7
+
+let datePerson = "aprovada";
+
+switch (datePerson){
+    case 'aprovada':
+        console.log("Parabéns! você foi aprovado.")
+        break;
+
+    case 'reprovado':
+        console.log('Você foi reprovado')
+        break;
+
+    case 'lista':
+        console.log('Você esta na lista de espera')
+
+    default:
+        console.log('Não se aplica')    
+}
+
+
