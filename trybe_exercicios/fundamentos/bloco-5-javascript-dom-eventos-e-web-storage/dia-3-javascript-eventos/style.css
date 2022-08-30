@@ -74,7 +74,7 @@ label {
   float: left;
   height: 100px;
   vertical-align: middle;
-  width: 49%;
+  width: 49%; 
 }
 
 .my-tasks div {
@@ -153,3 +153,19 @@ label {
   margin: 0px;
   padding: 10px 0;
 }
+
+.btn-day{
+  padding: 4px;
+  font-size: 20px;
+  color: #777;
+  border-radius: 4px;
+  border: solid 3px #B5C7CC ;
+  transition: 0.5s;
+}
+
+.btn-day:hover{
+  color: #363646;
+  background-color:#3CB34A;
+  padding: 5px;
+}
+
