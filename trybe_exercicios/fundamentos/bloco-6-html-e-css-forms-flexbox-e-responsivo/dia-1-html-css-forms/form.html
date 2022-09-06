@@ -16,7 +16,7 @@
 
   <main>
     <section class="container">
-      <form action="" method="get">
+      <form action="" method="get" id="form">
         <label for="name">Nome:
           <input type="text" name="name" required id="name" minlength="10"  maxlength="40" class="input">
         </label>
@@ -24,6 +24,7 @@
         <label for="email">E-mail:
           <input type="email" name="email" required id="email" minlength="10" maxlength="50">
         </label>
+
         <p>Destino preferido:</p>
         <label for="preferencia1">
           <input type="radio" name="local" id="preferencia1" value="cidade">Cidade
@@ -38,6 +39,7 @@
           <input type="radio" name="local" id="preferencia4" value="montanhas">Montanhas
         </label>
         <br>
+
         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
         <textarea name="motivos" id="" cols="30" rows="10" maxlength="500"></textarea>
         <br><br>
@@ -45,16 +47,19 @@
           <input type="date" name="date" id="date" required>
         </label>
         <br><br>
+
         <label for="opcional">
           <input type="checkbox" name="opcional" id="opcional">Gostaria de receber outras incríveis oportunidades
           oferecidas pela Trybe?
         </label>
         <br>
+
         <label for="obrigatorio">
           <input type="checkbox" name="obrigatorio" id="obrigatorio" required>Concordo que imagens das minhas férias
           poderão ser usadas na divulgação de concursos futuros.
         </label>
         <br><br>
+
         <button id="clear" type="reset">Limpar</button>
         <button type="submit" id="submit">Enviar</button>
 

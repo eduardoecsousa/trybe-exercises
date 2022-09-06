@@ -4,16 +4,13 @@ let inputName = document.getElementById('name')
 let inputEmail = document.getElementById('email');
 
 buttonSet.addEventListener('click', function (event) {
-  event.preventDefault();
   let nameCompleto = String(inputName.value);
+  const form = document.getElementById('form')
   if (nameCompleto.length < 10) {
-    alert("Campo 'Nome' com caracteres insuficiente");
-  } else if (inputEmail.checkValidity() === false) {
-    alert('E-mail invalido');
-  }
-
-})
-
-buttonClear.addEventListener('click', function () {
-
+    return alert("Campo 'Nome' com caracteres insuficiente");
+  } else if (inputEmail.checkValidity() === false ) {
+    return alert('E-mail invalido');
+  } 
+  event.preventDefault();
+  form.reset();
 })
