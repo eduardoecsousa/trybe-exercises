@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - Flex Flow</title>
+    <title>Flexbox - Justify Content</title>
     <style>
       .box {
         color: #9069EF;
@@ -13,16 +13,16 @@
         height: 60px;
         margin: 10px 5px;
         text-align: center;
-        width: 30%;
+        width: 20%;
       }
 
       .box-container {
         background-color: #0fa36b;
         display: flex;
-        /* flex-wrap: wrap;
-        flex-direction: row-reverse; */
-        flex-flow: row-reverse wrap;
-        /* ADICIONE AQUI SEUS TESTES */
+        justify-content: center; /* coloca todos os itens flex no centro */
+        justify-content: flex-start e flex-end; /* coloca os itens no no inicio do container ou no fim. isso na horizontal*/
+        justify-content: space-around; /* ajusta os itens para ficarem com o espaçamento entre cada um igual e os espaçamentos da borda tambem */
+        justify-content: space-between;/*mesma coisa que o 'space-around', mas esse cola os itens na borda do container*/
       }
     </style>
 
@@ -32,8 +32,6 @@
       <div class="box">1</div>
       <div class="box">2</div>
       <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
     </div>
   </body>
 </html>
