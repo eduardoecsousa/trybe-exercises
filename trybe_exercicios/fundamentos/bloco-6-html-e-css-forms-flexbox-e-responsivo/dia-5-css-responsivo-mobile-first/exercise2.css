@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 15px;
+  font-size: 18px;
+}
+
+.aside-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-one h2 {
+  margin: 0 15px;
+  font-size: 26px;
+}
+
+.aside-two {
+  margin-bottom: 40px ;
+}
+
+.aside-two h2 {
+  margin: 0 15px;
+  font-size: 26px;
+}
+
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width:678px) and (max-width:1201px) {
+  body {
+    margin: 25px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .aside-one h2 {
+    margin: 0 10px;
+    font-size: 26px;
+  }
+  
+  .aside-two h2 {
+    margin: 0 10px;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    margin: 20px;
+    font-size: 22px;
+    padding: 10px;
+    line-height:30px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-content p {
+    margin: 25px 0;
+  }
+
+  .main-content > h1 {
+    align-self: center;
+  }
+}
