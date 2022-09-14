@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+  
+      let title = document.getElementById('page-title');
+      title.innerText = 'Meu nome é jony';
+
+      let sbtitle = document.getElementsByTagName('h4');
+      sbtitle[0].innerText = 'O que eu quero na Trybe'
+      sbtitle[0].style.fontSize='40px'
+
+      let paragraphs = document.getElementsByClassName('paragraph');
+      paragraphs[0].innerText = 'Mundando a cor do paragrafo'
+      paragraphs[0].style.color = 'red'
+
+      paragraphs[1].innerText = 'Mundando o tamanho da fonte'
+      paragraphs[1].style.fontSize = '18px'
+
+
+    </script>
+  </body>
+</html>
