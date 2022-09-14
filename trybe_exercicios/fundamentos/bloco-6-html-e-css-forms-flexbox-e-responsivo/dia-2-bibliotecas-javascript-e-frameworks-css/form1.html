@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="../DatePickerX/dist/css/DatePickerX.min.css">
+  <script src="../DatePickerX/dist/js/DatePickerX.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <title>TrybeTrip</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title is-1">Concorra á uma viagem!!</h1>
+  </header>
+
+  <main>
+    <section class="section box">
+      <form action="#" method="post" id="form">
+        <label class="label" for="name">Nome:</label>
+        <input class="input is-success" type="text" name="name" required id="name">
+
+        <br><br>
+        <label class="label" for="email">E-mail: </label>
+        <input class="input is-success" type="email" name="email" required id="email">
+
+        <br>
+        <br>
+        <label class="label" for="">Destino preferido:</label>
+        <label for="preferencia1">
+          <input class="radio" type="radio" name="local" id="preferencia1" value="cidade">Cidade
+        </label>
+        <label for="preferencia2">
+          <input class="radio" type="radio" name="local" id="preferencia2" value="campo">Campo
+        </label>
+        <label for="preferencia3">
+          <input class="radio" type="radio" name="local" id="preferencia3" value="praia">Praia
+        </label>
+        <label for="preferencia4">
+          <input class="radio" type="radio" name="local" id="preferencia4" value="montanhas">Montanhas
+        </label>
+        <br>
+        <br>
+
+        <label class='label' for="">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea class="textarea is-info" name="motivos" id="" cols="30" rows="10" maxlength="500"></textarea>
+        <br><br>
+        <label for="date">Qual a melhor data para realizar sua viagem?
+          <input class="input is-success" type="text" name="date" id="date" required>
+        </label>
+        <br><br>
+
+        <label for="opcional">
+          <input class="checkbox" type="checkbox" name="opcional" id="opcional">Gostaria de receber outras incríveis
+          oportunidades
+          oferecidas pela Trybe?
+        </label>
+        <br>
+
+        <label for="obrigatorio">
+          <input class="checkbox" type="checkbox" name="obrigatorio" id="obrigatorio" required>Concordo que imagens das
+          minhas férias
+          poderão ser usadas na divulgação de concursos futuros.
+        </label>
+        <br><br>
+
+        <button id="clear" type="reset" class="button is-danger">Limpar</button>
+        <button type="submit" id="submit" class="button is-success">Enviar</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script1.js"></script>
+</body>
+
+</html>
