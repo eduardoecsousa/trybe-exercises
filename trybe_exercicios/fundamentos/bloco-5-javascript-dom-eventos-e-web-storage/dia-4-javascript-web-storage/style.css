@@ -1,0 +1,29 @@
+*{
+  margin: 3%;
+}
+
+header h1, header p {
+  text-align: center;
+}
+
+header p {
+  line-height: 70%;
+  margin: 14px;
+}
+
+footer{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#seletion{
+  display: flex;
+
+}
+
+body{
+  font-size: 100%;
+  line-height: 100%;
+  font-family: sans-serif;
+}
