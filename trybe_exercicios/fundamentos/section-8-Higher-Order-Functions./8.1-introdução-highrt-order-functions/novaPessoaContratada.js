@@ -1,13 +1,6 @@
 const hire= (nome) => {
-  const arrayNomePessoa = nome.toLowerCase().split(' ');
-  let email = '';
-  for(let i = 0; i < arrayNomePessoa.length; i += 1){
-    if(i === arrayNomePessoa.length -1 ){
-      email += arrayNomePessoa[i];
-    } else {
-      email += `${arrayNomePessoa[i]}_`
-  }
-}
+  const arrayNomePessoa = nome.replace(' ', '_').toLowerCase();
+  let email = arrayNomePessoa;
 return {
   nome: nome,
   email: `${email}@trybe.com`
