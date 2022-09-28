@@ -5,6 +5,10 @@ const rectangle2 = [3, 5];
 const rectangle3 = [6, 9];
 const rectangles = [rectangle1, rectangle2, rectangle3];
 
-rectangles.forEach((rectangle) => {
+const printTriangle = rectangles.forEach((rectangle) => {
   console.log(rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea()
 });
+
+console.log(printTriangle)
+
+module.exports = {rectangleArea, printTriangle};
