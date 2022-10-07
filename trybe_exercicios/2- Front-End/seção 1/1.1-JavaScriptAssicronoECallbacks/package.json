@@ -1,8 +1,8 @@
 {
-  "name": "setupandteardown",
+  "name": "1.1-javascriptassicronoecallbacks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "planet.js",
   "scripts": {
     "test": "jest --watchAll"
   },
