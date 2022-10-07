@@ -33,10 +33,13 @@ function getPokemonDetails(selectedPokemon, callback) {
 }
 
 const handlePokemonSearch = (error, message) => {
-  console.log(error)
-  console.log(message);
+  if (error) { // 2, 3. Criamos o `if/else` com o parâmetro `error`
+    console.log(error); // 4. Colocamos o console.log() para imprimir o erro
+  } else {
+    console.log(message);// 5. Colocamos o console.log() para imprimir a mensagem
+  }
 };
 
-// getPokemonDetails('Squirtle' , handlePokemonSearch);
+getPokemonDetails('Squirtle' , handlePokemonSearch);
 
 module.exports = getPokemonDetails;
