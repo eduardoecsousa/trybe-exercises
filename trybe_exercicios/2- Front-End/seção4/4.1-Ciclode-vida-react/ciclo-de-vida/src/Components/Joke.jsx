@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Joke extends Component {
   render() {
     const { jokeObj, saveJoke } = this.props;
+
     return (
       <div>
         <p>{jokeObj.joke}</p>
@@ -10,8 +11,9 @@ class Joke extends Component {
           Salvar piada!
         </button>
       </div>
-    )
+    );
   }
 }
+
 
 export default Joke

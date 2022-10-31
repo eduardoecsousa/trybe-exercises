@@ -8,7 +8,7 @@ class DadJoke extends React.Component {
     this.saveJoke = this.saveJoke.bind(this);
 
     this.state = {
-      jokeObj: undefined,
+      jokeObj: undefined, 
       loading: true,
       storedJokes: [],
     }
@@ -16,26 +16,26 @@ class DadJoke extends React.Component {
 
   async fetchJoke() {
     this.setState(
-      { loading: true },
+      { loading: true }, // Primeiro parâmetro da setState()!
       async () => {
-        const requestHeaders = { headers: { Accept: 'application/json' } }
-        const requestReturn = await fetch('https://icanhazdadjoke.com/', requestHeaders)
-        const requestObject = await requestReturn.json();
-        this.setState({
-          loading: false,
-          jokeObj: requestObject,
-        });
+      const requestHeaders = { headers: { Accept: 'application/json' } }
+      const requestReturn = await fetch('https://icanhazdadjoke.com/', requestHeaders)
+      const requestObject = await requestReturn.json();
+      this.setState({
+        loading: false,
+        jokeObj: requestObject
       });
+    });
   }
 
   componentDidMount() {
     this.fetchJoke();
   }
-  
+
   saveJoke() {
-    this.setState(({ storedJokes, jokeObj}) => ({
-      storedJokes:[...storedJokes, jokeObj]
-    }))
+    this.setState(({ storedJokes, jokeObj }) => ({
+      storedJokes: [...storedJokes, jokeObj]
+    }));
 
     this.fetchJoke();
   }
@@ -52,9 +52,9 @@ class DadJoke extends React.Component {
 
       <p>
         {
-         loading 
-          ? loadingElement 
-          : <Joke jokeObj={ jokeObj } saveJoke={ this.saveJoke } />
+          loading 
+            ? loadingElement
+            : <Joke jokeObj={jokeObj} saveJoke={this.saveJoke} />
         }
       </p>
 
